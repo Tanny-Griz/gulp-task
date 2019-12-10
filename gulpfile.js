@@ -31,7 +31,10 @@ gulp.task('watch', function() {
 
 gulp.task('browser-sync', function() {
     browserSync({
-        server: 'dev'
+        server: {
+            baseDir: 'dev'
+        },
+        notify: false
     })
 });
 
