@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -26,8 +27,8 @@
             </div>
         </section>
         <section class="choose-tour">
-          <div class="container">
-            <div class="holder-choose-tour">
+          <div class="holder-choose-tour">
+            <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Hotel</a>
@@ -40,16 +41,98 @@
               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sapiente ab ex aliquid reprehenderit id officiis ut labore rem nemo quis, sint magnam, sunt a autem placeat blanditiis, eius deserunt?</div>
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                <div class="col item">
+                  <h4>Were?</h4>
+                  <input type="text" placeholder="Chose location">
+                </div>
+                <div class="col item">
+                  <h4>Which?</h4>
+                  <input type="text" placeholder="Chose City">
+                </div>
+                <div class="col item">
+                  <h4>Check in</h4>
+                  <input type="number" placeholder="YY-DD-MM">
+                </div>
+                <div class="col item">
+                  <h4>Check out</h4>
+                  <input type="number" placeholder="YY-DD-MM">
+                </div>
+                </div>
+              </div>
               <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">123</div>
               <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">456987</div>
             </div>
             </ul>
           </div>
           </div>
+          <div class="holder-popular">
+            <div class="container">
+              <div class="holder-header">
+                <h4>Popular tour packages</h4>
+                <h2>Populer place</h2>
+              </div>
+              <div class="holder-slider">
+
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="popular"></section>
-        <section class="slider-banner"></section>
+        <section class="slider-banner">
+          <div class="container">
+            <div class="populer-plase-bg d-flex justify-content-center align-items-center">
+              <div class="inner-section">
+                <div class="container">
+                  <h3>Most Popular Travel Destinations</h3>
+                </div>
+              </div>
+            </div>
+            <div class="holder-span col-6 d-flex justify-content-center">
+              <span class="d-flex text-center">Love travel? Plan and book your perfect trip with expert advice, travel tips, destination information and inspiration from Lonely Planet</span>
+            </div>
+          </div>
+          <div class="holder-slider-populer">
+              <div class="bd-example">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/slider-populer.jpg" class="d-block w-100" alt="populer">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Grand Switzerland</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slider-populer.jpg" class="d-block w-100" alt="populer">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Grand Switzerland</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="images/slider-populer.jpg" class="d-block w-100" alt="populer">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Grand Switzerland</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+              </div>
+          </div>
+          
+        </section>
         <section class="destination"></section>
         <section class="best-packages"></section>
         <section class="stock-limited"></section>
@@ -58,7 +141,8 @@
       </main>
       <footer></footer>
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

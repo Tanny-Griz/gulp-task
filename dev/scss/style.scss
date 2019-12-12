@@ -1,0 +1,150 @@
+@import 'base/variables';
+@import 'bootstrap/scss/bootstrap-reboot';
+@import 'bootstrap/scss/bootstrap-grid';
+@import 'bootstrap/scss/bootstrap';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+}
+
+.wrapper {
+    min-width: 20rem;
+}
+
+.banner {
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    position: relative;
+    color: #fff;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100%;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 20%;
+        // background-image: url("../images/bg-lg-all.jpg");
+    }
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+
+}
+
+.inner-section {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.choose-tour {
+    position: relative;
+    z-index: 2;
+    margin-top: -2.26rem;
+}
+
+.holder-choose-tour {
+     z-index: 2;
+    //  position: absolute;
+    h4 {
+        font-size: 0.8rem;
+        color: #616161;
+        text-transform: uppercase;
+    }
+    .item {
+        padding: 3rem 1rem;
+    }
+    margin-bottom: 3.75rem;
+}
+
+.nav-item {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    a {
+        color: #333;
+        background-color: #fff;
+        &:hover, .active {
+            background-color: #ffc001;
+            color: #fff;  
+        }
+    }
+
+}
+
+.tab-content {
+    background-color: #fafafa;
+}
+
+.holder-popular {
+    padding-top: 3.75rem;
+    margin-bottom: 3.75rem;
+}
+
+.holder-header {
+    text-transform: uppercase;
+    h4 {
+        color: #ffc001;
+        font-size: 0.8rem;
+    }
+    h2 {
+        color: #333;
+        font-size: 1.875em;
+    }
+}
+
+.populer-plase-bg {
+    background-image: url('../images/populer-plase-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+    position: relative;
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+    }
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 9.49%;
+    }
+}
+
+.holder-slider-populer {
+    padding: 3rem 0;
+}
+
+.carousel-caption {
+    background-color: #fff;
+    opacity: 0.75;
+    max-width: 29.37rem;
+    margin: 0 auto;
+    color: #333;
+    border-radius: 0.3rem;
+}
