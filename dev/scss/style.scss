@@ -1,7 +1,14 @@
-@import 'base/variables';
-@import 'bootstrap/scss/bootstrap-reboot';
-@import 'bootstrap/scss/bootstrap-grid';
 @import 'bootstrap/scss/bootstrap';
+@import 'base/variables';
+@import 'components/buttons';
+
+// $breakpoints: (
+//     xs-phone: 320px,
+//     phone: 480px,
+//     tablet: 768px,
+//     desctop: 1024px,
+//     widescreen: 1300px
+// );
 
 * {
     box-sizing: border-box;
@@ -32,23 +39,49 @@ img {
     background-position: 50% 0;
     position: relative;
     color: #fff;
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 100%;
-    }
     @media screen and (min-width: 768px) {
         padding-top: 20%;
-        // background-image: url("../images/bg-lg-all.jpg");
     }
     &:before {
         content: "";
         display: block;
         padding-top: 56.25%;
     }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        @media screen and (min-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+    p {
+        font-size: 0.6rem;
+        @media screen and (min-width: 768px) {
+            font-size: 1.5rem;
+        }
+    }
+    a {
+        font-size: 1rem;
+        @media screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+    .description {
+        margin-bottom: 1.5rem;
+    }
+}
 
-
+.holder-banner {
+    a {
+        color: #ffc001;
+        font-weight: $font-weight-bold;
+        font-size: 1.2rem;
+    }
 }
 
 .inner-section {
@@ -60,39 +93,86 @@ img {
     bottom: 0;
 }
 
+// ------------------------------------
+
 .choose-tour {
     position: relative;
     z-index: 2;
-    margin-top: -2.26rem;
+    margin-top: -1.88rem;
+    @media screen and (min-width: 768px) {
+        margin-top: -2.26rem;
+    }
 }
 
 .holder-choose-tour {
-     z-index: 2;
-    //  position: absolute;
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 3.75rem;
+    }
     h4 {
         font-size: 0.8rem;
         color: #616161;
         text-transform: uppercase;
     }
     .item {
-        padding: 3rem 1rem;
+        padding: 1rem 0.5rem;
+        @media screen and (min-width: 768px) {
+            padding: 3rem 1rem;
+        }
     }
-    margin-bottom: 3.75rem;
+    input {
+        border: none;
+        color : $lighter-gray;
+        font-size: 0.875rem;
+        max-width: 11.75rem;
+        padding: 0.6rem 0.9rem;
+        @media screen and (min-width: 768px) {
+            padding: 0.8rem 1.3rem;
+        }
+    }
+    .box {
+        padding: 1rem 1.2rem;
+    }
 }
 
 .nav-item {
-    color: #333;
+    color: $grey;
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    @media screen and (min-width: 768px) {
+        font-size: 0.8rem;
+    }
     a {
-        color: #333;
-        background-color: #fff;
-        &:hover, .active {
-            background-color: #ffc001;
-            color: #fff;  
+        color: $grey;
+        background-color: $white;
+        &:hover {
+            background-color: $yellow;
+            color: $white;  
         }
     }
+}
 
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: $yellow;
+    color: $white;
+}
+
+// -----------------------------------------------------
+
+h3 {
+    font-size: 1rem;
+    margin: 0;
+    @media screen and (min-width: 768px) {
+        font-size: 1.875em;
+    }
+}
+
+span {
+    font-size: 1rem;
 }
 
 .tab-content {
@@ -112,7 +192,10 @@ img {
     }
     h2 {
         color: #333;
-        font-size: 1.875em;
+        font-size: 1.6em;
+        @media screen and (min-width: 768px) {
+            font-size: 1.875em;
+        }
     }
 }
 
@@ -136,15 +219,72 @@ img {
     }
 }
 
+.holder-span {
+    margin: 0 auto;
+    span {
+    font-size: 0.5rem;
+        @media screen and (min-width: 768px) {
+            font-size: 1rem;
+        } 
+    }
+}
+
 .holder-slider-populer {
-    padding: 3rem 0;
+    padding: 2.2rem 0;
+    @media screen and (min-width: 768px) {
+        padding: 3rem 0;
+    } 
 }
 
 .carousel-caption {
     background-color: #fff;
     opacity: 0.75;
-    max-width: 29.37rem;
+    max-width: 22rem;
+    height: 6.8rem;
     margin: 0 auto;
     color: #333;
     border-radius: 0.3rem;
+    bottom: -2rem;
+    z-index: 3;
+    box-shadow: 0 0 10px #000;
+    h5 {
+        font-weight: $font-weight-bold;
+        font-size: 1rem;
+    }
+}
+
+.carousel-indicators {
+    bottom: -3.75rem;
+    li {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 100%;
+        background-color: $yellow;
+    } 
+}
+
+// --------------------------------------------
+
+.box-header {
+    padding: 1.65rem 0;
+    @media screen and (min-width: 768px) {
+        padding: 3.75rem 0;
+    }
+    max-width: 40rem;
+    margin: 0 auto;
+    h3 {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 1.3rem;
+        } 
+    }
+    span {
+        font-size: 0.5rem;
+        @media screen and (min-width: 768px) {
+            font-size: 1rem;
+        } 
+    }
+}
+
+.holder-slider-destination {
+    padding: 2rem 0;
 }
