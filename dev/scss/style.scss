@@ -41,6 +41,104 @@ a {
     min-width: 20rem;
 }
 
+// ---------------------------------------------------
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.holder-social {
+    border-bottom: 1px solid $yellow;
+    @media screen and (min-width: 768px) {
+        padding: 1rem 0;
+    }
+    a {
+        font-size: 0.5rem;
+        @media screen and (min-width: 768px) {
+            font-size: 1rem;
+        }
+        color: $white;
+    }
+    .box-social {
+        display: flex;
+        flex-direction: column;
+        margin: 0 -1rem;
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+    ul {
+        li {
+            padding: 0.3rem 0.3rem;
+            @media screen and (min-width: 768px) {
+                padding: 1rem;
+            }
+        }
+    }
+    .btn {
+        color: $white;
+        font-size: 0.6rem;
+        @media screen and (min-width: 768px) {
+           font-size: 1rem; 
+        }
+        &:first-child {
+            border-right: 1px solid $yellow;
+        }
+    }
+}
+
+.address {
+    padding-right: 1rem;
+    a {
+        font-size: 0.5rem;
+        @media screen and (min-width: 768px) {
+           font-size: 0.8rem; 
+        }
+    }
+}
+
+.holder-nav {
+    @media screen and (min-width: 768px) {
+       padding: 1.5rem 0; 
+    }
+    .logo {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            width: 7rem;
+        }
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+        }
+    }
+    .nav {
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin: 0 -1rem;
+        }
+    }
+    .nav-item {
+        color: $white;
+        padding: 0 1rem;
+        a {
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $white;
+            &:hover {
+                color: $yellow;  
+            }
+        }
+    }
+}
+
+
+// ------------------------------------------------------
+
 .banner {
     background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
@@ -63,9 +161,9 @@ a {
         min-height: 100%;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         @media screen and (min-width: 768px) {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 1.7rem;
         }
         @media screen and (min-width: 1024px) {
@@ -75,7 +173,7 @@ a {
     p {
         font-size: 0.6rem;
         @media screen and (min-width: 768px) {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             margin-bottom: 1.7rem;
         }
         @media screen and (min-width: 1024px) {
@@ -84,7 +182,7 @@ a {
     }
     a {
         color: #ffc001;
-        font-size: 1rem;
+        font-size: 0.6rem;
         font-weight: $font-weight-bold;
         @media screen and (min-width: 768px) {
             font-size: 1.5rem;
@@ -93,8 +191,21 @@ a {
             font-size: 2.5rem;
         }
     }
+    .holder-description {
+        margin-top: 3rem;
+        @media screen and (min-width: 768px) {
+            margin-top: 10rem;
+        }
+        @media screen and (min-width: 1024px) {
+            margin: 0;
+        }
+    }
     .description {
-        margin-bottom: 1.5rem;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            margin-bottom: 1.5rem;  
+        }
     }
 }
 
@@ -115,6 +226,29 @@ a {
     margin-top: -1.88rem;
     @media screen and (min-width: 768px) {
         margin-top: -2.2rem;
+    }
+    .nav-item {
+        color: $grey;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        @media screen and (min-width: 768px) {
+            font-size: 0.8rem;
+        }
+        a {
+            color: $grey;
+            background-color: $white;
+            &:hover {
+                background-color: $yellow;
+                color: $white;  
+            }
+        }
+    }
+    .nav-tabs .nav-link {
+        border: 1px solid transparent;
+    }
+    .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+        background-color: $yellow;
+        color: $white;
     }
 }
 
@@ -154,31 +288,6 @@ a {
     }
 }
 
-.nav-item {
-    color: $grey;
-    text-transform: uppercase;
-    font-size: 0.6rem;
-    @media screen and (min-width: 768px) {
-        font-size: 0.8rem;
-    }
-    a {
-        color: $grey;
-        background-color: $white;
-        &:hover {
-            background-color: $yellow;
-            color: $white;  
-        }
-    }
-}
-
-.nav-tabs .nav-link {
-    border: 1px solid transparent;
-}
-
-.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-    background-color: $yellow;
-    color: $white;
-}
 
 // -----------------------------------------------------
 

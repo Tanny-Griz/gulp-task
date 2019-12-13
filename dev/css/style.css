@@ -7150,7 +7150,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #ffc001;
   border-color: #fff;
   border-radius: 1.5rem;
-  padding: 0.7rem 1.2rem; }
+  padding: 0.3rem 1.1rem; }
   @media screen and (min-width: 768px) {
     .btn-outline-info {
       padding: 0.5rem 1.1rem; } }
@@ -7194,6 +7194,84 @@ a {
 .wrapper {
   min-width: 20rem; }
 
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+
+.holder-social {
+  border-bottom: 1px solid #ffc001; }
+  @media screen and (min-width: 768px) {
+    .holder-social {
+      padding: 1rem 0; } }
+  .holder-social a {
+    font-size: 0.5rem;
+    color: #fff; }
+    @media screen and (min-width: 768px) {
+      .holder-social a {
+        font-size: 1rem; } }
+  .holder-social .box-social {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -1rem; }
+    @media screen and (min-width: 768px) {
+      .holder-social .box-social {
+        flex-direction: row; } }
+  .holder-social ul li {
+    padding: 0.3rem 0.3rem; }
+    @media screen and (min-width: 768px) {
+      .holder-social ul li {
+        padding: 1rem; } }
+  .holder-social .btn {
+    color: #fff;
+    font-size: 0.6rem; }
+    @media screen and (min-width: 768px) {
+      .holder-social .btn {
+        font-size: 1rem; } }
+    .holder-social .btn:first-child {
+      border-right: 1px solid #ffc001; }
+
+.address {
+  padding-right: 1rem; }
+  .address a {
+    font-size: 0.5rem; }
+    @media screen and (min-width: 768px) {
+      .address a {
+        font-size: 0.8rem; } }
+
+@media screen and (min-width: 768px) {
+  .holder-nav {
+    padding: 1.5rem 0; } }
+
+.holder-nav .logo {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .holder-nav .logo {
+      display: block;
+      width: 7rem; } }
+  @media screen and (min-width: 1024px) {
+    .holder-nav .logo {
+      width: 100%; } }
+
+.holder-nav .nav {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .holder-nav .nav {
+      display: flex;
+      margin: 0 -1rem; } }
+
+.holder-nav .nav-item {
+  color: #fff;
+  padding: 0 1rem; }
+  .holder-nav .nav-item a {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff; }
+    .holder-nav .nav-item a:hover {
+      color: #ffc001; }
+
 .banner {
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
@@ -7214,10 +7292,10 @@ a {
     justify-content: center;
     min-height: 100%; }
   .banner h1 {
-    font-size: 1.5rem; }
+    font-size: 1.2rem; }
     @media screen and (min-width: 768px) {
       .banner h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 1.7rem; } }
     @media screen and (min-width: 1024px) {
       .banner h1 {
@@ -7226,14 +7304,14 @@ a {
     font-size: 0.6rem; }
     @media screen and (min-width: 768px) {
       .banner p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-bottom: 1.7rem; } }
     @media screen and (min-width: 1024px) {
       .banner p {
         margin-bottom: 3rem; } }
   .banner a {
     color: #ffc001;
-    font-size: 1rem;
+    font-size: 0.6rem;
     font-weight: 700; }
     @media screen and (min-width: 768px) {
       .banner a {
@@ -7241,8 +7319,20 @@ a {
     @media screen and (min-width: 1024px) {
       .banner a {
         font-size: 2.5rem; } }
+  .banner .holder-description {
+    margin-top: 3rem; }
+    @media screen and (min-width: 768px) {
+      .banner .holder-description {
+        margin-top: 10rem; } }
+    @media screen and (min-width: 1024px) {
+      .banner .holder-description {
+        margin: 0; } }
   .banner .description {
-    margin-bottom: 1.5rem; }
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .banner .description {
+        text-align: left;
+        margin-bottom: 1.5rem; } }
 
 .inner-section {
   display: flex;
@@ -7259,6 +7349,24 @@ a {
   @media screen and (min-width: 768px) {
     .choose-tour {
       margin-top: -2.2rem; } }
+  .choose-tour .nav-item {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.6rem; }
+    @media screen and (min-width: 768px) {
+      .choose-tour .nav-item {
+        font-size: 0.8rem; } }
+    .choose-tour .nav-item a {
+      color: #333;
+      background-color: #fff; }
+      .choose-tour .nav-item a:hover {
+        background-color: #ffc001;
+        color: #fff; }
+  .choose-tour .nav-tabs .nav-link {
+    border: 1px solid transparent; }
+  .choose-tour .nav-tabs .nav-link.active, .choose-tour .nav-tabs .nav-item.show .nav-link {
+    background-color: #ffc001;
+    color: #fff; }
 
 .holder-choose-tour {
   z-index: 2; }
@@ -7290,28 +7398,6 @@ a {
     @media screen and (min-width: 768px) {
       .holder-choose-tour .box {
         text-align: left; } }
-
-.nav-item {
-  color: #333;
-  text-transform: uppercase;
-  font-size: 0.6rem; }
-  @media screen and (min-width: 768px) {
-    .nav-item {
-      font-size: 0.8rem; } }
-  .nav-item a {
-    color: #333;
-    background-color: #fff; }
-    .nav-item a:hover {
-      background-color: #ffc001;
-      color: #fff; }
-
-.nav-tabs .nav-link {
-  border: 1px solid transparent; }
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  background-color: #ffc001;
-  color: #fff; }
 
 h3 {
   font-size: 1rem;
