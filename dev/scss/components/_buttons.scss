@@ -20,3 +20,16 @@
         background-color: $yellow;
     }
 }
+
+.btn-more {
+    font-size: 0.8rem;
+    color: $yellow;
+    border: none;
+    @media screen and (min-width: 768px) {
+        font-size: 1rem;
+    }
+    &:hover {
+        color: $white;
+        background-color: $yellow;
+    }
+}

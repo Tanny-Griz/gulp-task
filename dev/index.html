@@ -158,7 +158,7 @@
           </div>
           <div class="holder-slider-populer">
               <div class="bd-example">
-                  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                  <div id="carouselExampleCaptions" class="carousel slide" data-interval="false" data-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -204,9 +204,10 @@
             </div>
           </div>
           <div class="holder-slider-destination">
-            <div class="autoplay">
+            <div class="multiple-items">
               <div class="holder-item">
-                <div class="row item">
+                <a href="">
+                  <div class="row item">
                   <div class="col-7">
                     <div class="img">
                       <img src="images/slider-1.jpg" alt="">
@@ -218,15 +219,17 @@
                     <p>2 days 2 night</p>
                     <p>There are a few very, very fine strands of PLA</p>
                     <span class="stars"></span>
-                    <button class="btn more">More details</button>
+                    <button class="btn btn-more">More details</button>
                   </div>
                 </div>
+                </a>
               </div>
               <div class="holder-item">
-                <div class="row item">
+                <a href="">
+                  <div class="row item">
                   <div class="col-7">
                     <div class="img">
-                      <img src="images/slider-2.jpg" alt="">
+                      <img src="images/slider-1.jpg" alt="">
                     </div>
                   </div>
                   <div class="col-5">
@@ -235,15 +238,18 @@
                     <p>2 days 2 night</p>
                     <p>There are a few very, very fine strands of PLA</p>
                     <span class="stars"></span>
-                    <button class="btn more">More details</button>
+                    <button class="btn btn-more">More details</button>
                   </div>
                 </div>
+                </a>
               </div>
               <div class="holder-item">
                 <div class="row item">
+                  <a href="">
+                  <div class="row item">
                   <div class="col-7">
                     <div class="img">
-                      <img src="images/slider-3.jpg" alt="">
+                      <img src="images/slider-1.jpg" alt="">
                     </div>
                   </div>
                   <div class="col-5">
@@ -252,9 +258,10 @@
                     <p>2 days 2 night</p>
                     <p>There are a few very, very fine strands of PLA</p>
                     <span class="stars"></span>
-                    <button class="btn more">More details</button>
+                    <button class="btn btn-more">More details</button>
                   </div>
                 </div>
+                </a>
               </div>
             </div>
           </div>
@@ -272,12 +279,11 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="plagins/slick/slick.js"></script>
     <script>
-      $('.autoplay').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
+      $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
     </script>
     <script src="js/main.js"></script>
   </body>

@@ -28,6 +28,15 @@ img {
     height: auto;
 }
 
+a {
+    color: $grey;
+    text-decoration: none;
+    &:hover {
+        color: $grey;
+        text-decoration: none;
+    }
+} 
+
 .wrapper {
     min-width: 20rem;
 }
@@ -105,7 +114,7 @@ img {
     z-index: 2;
     margin-top: -1.88rem;
     @media screen and (min-width: 768px) {
-        margin-top: -2.26rem;
+        margin-top: -2.2rem;
     }
 }
 
@@ -129,14 +138,19 @@ img {
         border: none;
         color : $lighter-gray;
         font-size: 0.875rem;
-        max-width: 11.75rem;
+        max-width: 7.05rem;
         padding: 0.6rem 0.9rem;
         @media screen and (min-width: 768px) {
             padding: 0.8rem 1.3rem;
+            max-width: 11rem;
         }
     }
     .box {
+        text-align: center;
         padding: 1rem 1.2rem;
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
 }
 
@@ -238,18 +252,22 @@ span {
     padding: 2.2rem 0;
     @media screen and (min-width: 768px) {
         padding: 3rem 0;
-    } 
+    }
+    a {
+        color: $grey;
+    }
 }
 
 .carousel-caption {
+    position: relative;
     background-color: #fff;
     opacity: 0.75;
     max-width: 22rem;
-    height: 6.8rem;
+    height: 7.8rem;
     margin: 0 auto;
     color: #333;
     border-radius: 0.3rem;
-    bottom: -2rem;
+    bottom: 3.8rem;
     z-index: 3;
     box-shadow: 0 0 10px #000;
     h5 {
