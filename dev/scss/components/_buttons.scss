@@ -1,7 +1,8 @@
 .btn {
     text-transform: uppercase;
     font-weight: 0.875rem;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
+    padding: 0.175rem 0.45rem;
     @media screen and (min-width: 768px) {
         font-size: 1.3rem;
     }
@@ -11,8 +12,14 @@
     color: $yellow;
     border-color: $white;
     border-radius: 1.5rem;
-    padding: 0.3rem 1.1rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 0.4rem;
+    @media screen and (min-width: 480px) {
+        padding: 0.3rem 1rem;
+        font-size: 0.7rem;
+    }
     @media screen and (min-width: 768px) {
+        font-size: 1rem;
         padding: 0.5rem 1.1rem;
     }
     &:hover {
@@ -24,7 +31,9 @@
 .btn-more {
     font-size: 0.8rem;
     color: $yellow;
-    border: none;
+    border-radius: 0%;
+    padding: 0.5rem;
+    width: 100%;
     @media screen and (min-width: 768px) {
         font-size: 1rem;
     }
