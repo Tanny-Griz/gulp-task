@@ -625,6 +625,8 @@ span {
 
         i {
             position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             bottom: -1.5rem;
             font-size: 1rem;
             padding: 0.5rem;
@@ -635,15 +637,9 @@ span {
                 font-size: 1.6rem;
             }
         }
-
-        .slick-list {
-            overflow: visible;
-        }
-        // &:after {
-        //     content: '\e901';
-        //     padding-top: 2rem;
-        //     margin-top: 2rem;
-        // } 
+        // .slick-list {
+        //     overflow: visible;
+        // }
     }
 }
 
@@ -725,6 +721,12 @@ span {
         color: $grey;
         padding: 0.2rem;
     }
+    .carousel-inner {
+        overflow: visible;
+    }
+    .slick-list {
+        overflow: visible;
+    }
 }
 
 .carousel-caption {
@@ -773,10 +775,6 @@ span {
     }
 }
 
-.carousel-inner {
-    overflow: visible;
-}
-
 .carousel-indicators {
     bottom: -4.75rem;
     li {
@@ -804,9 +802,6 @@ span {
 
 .holder-slider-destination {
     padding: 2rem 0;
-}
-
-.holder-slider-destination {
     h4 {
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -848,10 +843,10 @@ span {
         box-shadow: 0 0 10px 10px #f9fafa;
     }
     .visual {
-        padding: 1rem 0;
+        padding-top: 1rem;
         margin: 0 auto;
         @media screen and (min-width: 1600px) {
-            padding: 3rem 0.8rem 0;
+            padding-top: 3rem;
         }
     }
     .text {

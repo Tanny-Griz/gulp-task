@@ -7661,6 +7661,8 @@ span {
         padding: 0.8rem 0 0.8rem; } }
     .holder-slider .hover-text i {
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       bottom: -1.5rem;
       font-size: 1rem;
       padding: 0.5rem;
@@ -7670,8 +7672,6 @@ span {
       @media screen and (min-width: 768px) {
         .holder-slider .hover-text i {
           font-size: 1.6rem; } }
-    .holder-slider .hover-text .slick-list {
-      overflow: visible; }
 
 .populer-plase {
   position: relative; }
@@ -7729,6 +7729,10 @@ span {
   .holder-slider-populer a {
     color: #333;
     padding: 0.2rem; }
+  .holder-slider-populer .carousel-inner {
+    overflow: visible; }
+  .holder-slider-populer .slick-list {
+    overflow: visible; }
 
 .carousel-caption {
   display: none; }
@@ -7767,9 +7771,6 @@ span {
     padding: 0.5rem;
     border: 1px solid #ffdd00; }
 
-.carousel-inner {
-  overflow: visible; }
-
 .carousel-indicators {
   bottom: -4.75rem; }
   .carousel-indicators li {
@@ -7791,70 +7792,59 @@ span {
 
 .holder-slider-destination {
   padding: 2rem 0; }
-
-.holder-slider-destination h4 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  font-weight: 700; }
-  @media screen and (min-width: 768px) {
-    .holder-slider-destination h4 {
-      font-size: 1.3rem; } }
-
-.holder-slider-destination span {
-  color: #ffc001;
-  font-weight: 700;
-  margin-bottom: 1rem; }
-
-.holder-slider-destination strong {
-  justify-content: center;
-  font-size: 0.9rem; }
-  @media screen and (min-width: 768px) {
-    .holder-slider-destination strong {
-      justify-content: flex-start;
-      margin-bottom: 1rem; } }
-
-.holder-slider-destination p {
-  font-size: 0.9rem;
-  color: #616161;
-  margin-bottom: 1rem; }
-
-.holder-slider-destination .slide {
-  padding: 0 0.5rem; }
-
-.holder-slider-destination .slide-content {
-  flex-direction: column;
-  text-align: center;
-  box-shadow: 0 0 10px 10px #f9fafa; }
-  @media screen and (min-width: 768px) {
-    .holder-slider-destination .slide-content {
-      flex-direction: row; } }
-
-.holder-slider-destination .visual {
-  padding: 1rem 0;
-  margin: 0 auto; }
-  @media screen and (min-width: 1600px) {
-    .holder-slider-destination .visual {
-      padding: 3rem 0.8rem 0; } }
-
-@media screen and (min-width: 768px) {
-  .holder-slider-destination .text {
-    display: flex;
+  .holder-slider-destination h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700; }
+    @media screen and (min-width: 768px) {
+      .holder-slider-destination h4 {
+        font-size: 1.3rem; } }
+  .holder-slider-destination span {
+    color: #ffc001;
+    font-weight: 700;
+    margin-bottom: 1rem; }
+  .holder-slider-destination strong {
+    justify-content: center;
+    font-size: 0.9rem; }
+    @media screen and (min-width: 768px) {
+      .holder-slider-destination strong {
+        justify-content: flex-start;
+        margin-bottom: 1rem; } }
+  .holder-slider-destination p {
+    font-size: 0.9rem;
+    color: #616161;
+    margin-bottom: 1rem; }
+  .holder-slider-destination .slide {
+    padding: 0 0.5rem; }
+  .holder-slider-destination .slide-content {
     flex-direction: column;
-    text-align: left;
-    padding: 1rem 0.8rem 0; } }
-
-@media screen and (min-width: 1600px) {
-  .holder-slider-destination .text {
-    padding: 3rem 0.8rem 0; } }
-
-.holder-slider-destination .btn-more {
-  margin-top: auto; }
+    text-align: center;
+    box-shadow: 0 0 10px 10px #f9fafa; }
+    @media screen and (min-width: 768px) {
+      .holder-slider-destination .slide-content {
+        flex-direction: row; } }
+  .holder-slider-destination .visual {
+    padding-top: 1rem;
+    margin: 0 auto; }
+    @media screen and (min-width: 1600px) {
+      .holder-slider-destination .visual {
+        padding-top: 3rem; } }
   @media screen and (min-width: 768px) {
-    .holder-slider-destination .btn-more {
-      margin-left: -0.8rem; } }
-
-.holder-slider-destination .slick-list {
-  overflow: visible; }
+    .holder-slider-destination .text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      padding: 1rem 0.8rem 0; } }
+  @media screen and (min-width: 1600px) {
+    .holder-slider-destination .text {
+      padding: 3rem 0.8rem 0; } }
+  .holder-slider-destination .btn-more {
+    margin-top: auto; }
+    @media screen and (min-width: 768px) {
+      .holder-slider-destination .btn-more {
+        margin-left: -0.8rem; } }
+  .holder-slider-destination .slick-list {
+    overflow: visible; }
 
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
   color: #ffc001;
