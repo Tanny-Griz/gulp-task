@@ -534,7 +534,7 @@ span {
     h2 {
         color: $grey;
         font-size: 1.3em;
-        font-weight: 800;
+        font-weight: 700;
 
         @media screen and (min-width: 480px) {
             font-size: 1.5rem;
@@ -637,9 +637,6 @@ span {
                 font-size: 1.6rem;
             }
         }
-        // .slick-list {
-        //     overflow: visible;
-        // }
     }
 }
 
@@ -679,7 +676,7 @@ span {
 .holder-heading {
     h3 {
         font-size: 1rem;
-
+        padding: 1rem 0;
         @media screen and (min-width: 480px) {
             font-size: 1rem;
             font-weight: 700;
@@ -696,8 +693,8 @@ span {
     }
     span {
         font-size: 0.5rem;
-        line-height: 0.5;
-
+        display: inline-block;
+        line-height: 1.4;
         @media screen and (min-width: 480px) {
             font-size: 0.8rem;
         }
@@ -709,13 +706,13 @@ span {
 }
 
 .holder-slider-populer {
-    padding: 3.3rem 0;
+    padding: 3rem 0;
 
     @media screen and (min-width: 480px) {
-        padding: 4rem 0;
+        padding: 3.5rem 0;
     }
     @media screen and (min-width: 768px) {
-        // padding: 3rem 0;
+        padding: 4rem 0;
     }
     a {
         color: $grey;
@@ -801,7 +798,7 @@ span {
 }
 
 .holder-slider-destination {
-    padding: 2rem 0;
+    // padding: 2rem 0;
     h4 {
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -869,9 +866,9 @@ span {
         }
         
     }
-    .slick-list {
-        overflow: visible;
-    }
+    // .slick-list {
+    //     overflow: visible;
+    // }
 }
 
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
@@ -922,7 +919,7 @@ span {
     }
     h3 {
         font-size: 1.4rem;
-        font-weight: 800;
+        font-weight: 700;
         margin-bottom: 1rem;
         @media screen and (min-width: 1024px) {
             font-size: 2rem;
@@ -941,7 +938,7 @@ span {
     }
     .btn-more {
         text-align: center;
-        width: 30%;
+        width: 32%;
         font-size: 0.8rem;
         margin-bottom: 1rem;
         @media screen and (min-width: 768px) {
@@ -949,5 +946,129 @@ span {
             width: 40%;
         }
     }
+}
 
+.holder-stock-limited {
+    padding: 2rem 0;
+    @media screen and (min-width: 768px)  {
+        padding: 5rem 0; 
+    }
+    @media screen and (min-width: 1024px) {
+        padding: 9.3rem 0; 
+    }
+    h2 {
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        @media screen and (min-width: 768px)  {
+            font-size: 1.875rem; 
+        }
+    }
+    span {
+        font-size: 0.5rem;
+        display: inline-block;
+        line-height: 1.4;
+        margin-bottom: 1rem;
+        @media screen and (min-width: 768px)  {
+            font-size: 1rem; 
+        }
+    }
+    strong {
+        font-size: 1rem;
+        @media screen and (min-width: 768px)  {
+            font-size: 1.5rem; 
+        }
+    }
+    .upp {
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    .slider-stock {
+        padding: 1rem 0;
+    }
+    .slide-content {
+        flex-direction: column;
+        justify-content: center;
+        @media screen and (min-width: 480px)  {
+            flex-direction: row;
+        }
+    }
+    .visual {
+        @media screen and (min-width: 480px)  {
+            max-width: 14rem;
+        }
+        @media screen and (min-width: 768px)  {
+            max-width: 16rem;
+        }
+        @media screen and (min-width: 1024px)  {
+            max-width: 18rem;
+        }
+        @media screen and (min-width: 1200px)  {
+            max-width: 20rem;
+        }
+    }
+    .text {
+        text-align: center;
+        padding: 1rem 0;
+        @media screen and (min-width: 480px)  {
+            text-align: left;
+            padding: 1rem 2rem;
+        }
+        @media screen and (min-width: 768px)  {
+            
+        }
+        h4 {
+            font-size: 1rem;
+            font-weight: 700;
+            @media screen and (min-width: 480px) {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+            }
+        }
+        span {
+            display: block;
+            font-size: 0.6rem;
+            @media screen and (min-width: 480px) {
+                font-size: 0.8rem;
+            }
+        }
+        strong {
+            font-weight: 600;
+            color: $yellow;
+            @media screen and (min-width: 480px) {
+                font-size: 1.2rem;
+            }
+        }
+        .slick-prev:before {
+            // content: '\e906';
+        }
+    }
+}
+
+.slick-prev:before, .slick-next:before {
+    color: $yellow;
+}
+
+.slick-arrow {
+    display: none;
+
+}
+
+.color-yellow {
+    color: $yellow;
+}
+
+.color-red {
+    color: #ef6f6c;
+}
+
+.color-green {
+    color: #28c190;
+}
+
+.color-grey {
+    color: $grey;
 }
