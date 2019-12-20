@@ -291,16 +291,11 @@ header {
     color: #fff;
 
     @media screen and (min-width: 768px) {
-        padding-top: 20%;
+        // padding-top: 20%;
+        min-height: 100vh;
     }
-    &:before {
-        content: "";
-        display: block;
-        padding-top: calc(72% - 32px);
-
-        @media screen and (min-width: 480px) {
-            padding-top: calc(70% - 32px);
-        }
+    @media screen and (min-width: 1024px) {
+        min-height: 100vh;
     }
     .container {
         display: flex;
