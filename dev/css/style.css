@@ -7673,6 +7673,9 @@ span {
       @media screen and (min-width: 768px) {
         .holder-slider .hover-text i {
           font-size: 1.6rem; } }
+  .holder-slider .slick-list {
+    overflow-y: visible;
+    overflow-x: hidden; }
 
 .populer-plase {
   position: relative; }
@@ -7736,8 +7739,6 @@ span {
     color: #333;
     padding: 0.2rem; }
   .holder-slider-populer .carousel-inner {
-    overflow: visible; }
-  .holder-slider-populer .slick-list {
     overflow: visible; }
 
 .carousel-caption {
@@ -7856,6 +7857,9 @@ span {
   @media screen and (min-width: 768px) {
     .holder-slider-destination .btn-more {
       margin-left: -0.8rem; } }
+
+.holder-slider-destination .slick-list {
+  overflow-y: visible; }
 
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
   color: #ffc001;

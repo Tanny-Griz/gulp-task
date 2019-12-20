@@ -638,6 +638,10 @@ span {
             }
         }
     }
+    .slick-list {
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
 }
 
 // ----------------------------------------------------
@@ -721,10 +725,8 @@ span {
     .carousel-inner {
         overflow: visible;
     }
-    .slick-list {
-        overflow: visible;
-    }
 }
+
 
 .carousel-caption {
     display: none;
@@ -833,11 +835,10 @@ span {
     .slide-content {
         flex-direction: column;
         text-align: center;
-
+        box-shadow: 0 0 10px 10px #f9fafa;
         @media screen and (min-width: 768px) {
             flex-direction: row;
         }
-        box-shadow: 0 0 10px 10px #f9fafa;
     }
     .visual {
         padding-top: 1rem;
@@ -866,9 +867,9 @@ span {
         }
         
     }
-    // .slick-list {
-    //     overflow: visible;
-    // }
+    .slick-list {
+        overflow-y: visible;
+    }
 }
 
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
