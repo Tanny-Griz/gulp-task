@@ -7660,18 +7660,21 @@ span {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      bottom: -1.5rem;
+      bottom: -1.1rem;
       font-size: 1rem;
       padding: 0.5rem;
       color: #fff;
       background-color: #ffc001;
       border-radius: 100%; }
+      @media screen and (min-width: 480px) {
+        .holder-slider .hover-text i {
+          bottom: -1.2rem; } }
       @media screen and (min-width: 768px) {
         .holder-slider .hover-text i {
-          font-size: 1.6rem; } }
-  .holder-slider .slick-list {
-    overflow-y: visible;
-    overflow-x: hidden; }
+          font-size: 1.6rem;
+          bottom: -1.5rem; } }
+  .holder-slider .slick-slide {
+    padding-bottom: 1.875rem; }
 
 .populer-plase {
   position: relative; }
@@ -7735,7 +7738,11 @@ span {
     color: #333;
     padding: 0.2rem; }
   .holder-slider-populer .carousel-inner {
-    overflow: visible; }
+    overflow: visible;
+    padding: 1rem 0; }
+    @media screen and (min-width: 480px) {
+      .holder-slider-populer .carousel-inner {
+        padding: 2rem 0; } }
 
 .carousel-caption {
   display: none; }
@@ -7771,8 +7778,11 @@ span {
   .carousel-caption li {
     display: inline-block;
     text-align: center;
-    padding: 0.5rem;
     border: 1px solid #ffdd00; }
+  .carousel-caption a {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.5rem; }
 
 .carousel-indicators {
   bottom: -4.75rem; }
@@ -7854,8 +7864,8 @@ span {
     .holder-slider-destination .btn-more {
       margin-left: -0.8rem; } }
 
-.holder-slider-destination .slick-list {
-  overflow-y: visible; }
+.holder-slider-destination .slick-slide {
+  padding: 0.6rem 0; }
 
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
   color: #ffc001;

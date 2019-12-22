@@ -60,4 +60,6 @@ $('.slider-populer').slick({
 });
 
 
-$('.single-item').slick();
+$('.single-item').slick({
+    arrows: false,
+});

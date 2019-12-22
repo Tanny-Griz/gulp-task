@@ -99,8 +99,7 @@ i {
     @media screen and (min-width: 768px) {
         font-size: 1rem;
     }
-
-}  
+}
 
 * {
     box-sizing: border-box;
@@ -622,20 +621,23 @@ span {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: -1.5rem;
+            bottom: -1.1rem;
             font-size: 1rem;
             padding: 0.5rem;
             color: $white;
             background-color: $yellow;
             border-radius: 100%;
+            @media screen and (min-width: 480px) {
+                bottom: -1.2rem;
+            }
             @media screen and (min-width: 768px) {
                 font-size: 1.6rem;
+                bottom: -1.5rem;
             }
         }
     }
-    .slick-list {
-        overflow-y: visible;
-        overflow-x: hidden;
+    .slick-slide {
+        padding-bottom: 1.875rem;
     }
 }
 
@@ -719,6 +721,10 @@ span {
     }
     .carousel-inner {
         overflow: visible;
+        padding: 1rem 0;
+        @media screen and (min-width: 480px) {
+            padding: 2rem 0;
+        }
     }
 }
 
@@ -764,8 +770,12 @@ span {
     li {
         display: inline-block;
         text-align: center;
-        padding: 0.5rem;
         border: 1px solid $yellow-bright;
+    }
+    a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0.5rem;
     }
 }
 
@@ -862,8 +872,8 @@ span {
         }
         
     }
-    .slick-list {
-        overflow-y: visible;
+    .slick-slide {
+        padding: 0.6rem 0;
     }
 }
 
