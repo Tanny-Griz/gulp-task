@@ -288,9 +288,8 @@ header {
     background-position: 50% 0;
     position: relative;
     color: #fff;
-
+    min-height: 100vh;
     @media screen and (min-width: 768px) {
-        // padding-top: 20%;
         min-height: 100vh;
     }
     @media screen and (min-width: 1024px) {
@@ -510,8 +509,10 @@ span {
 }
 
 .holder-popular {
-    padding-top: 2.55rem;
-    margin-bottom: 2.55rem;
+    padding-top: 4rem;
+    @media screen and (min-width: 768px) {
+       margin-bottom: 2.55rem; 
+    } 
 }
 
 .holder-header {
@@ -541,8 +542,10 @@ span {
 }
 
 .holder-slider {
-    padding: 1rem 0;
-
+    margin-bottom: 1rem;
+    @media screen and (min-width: 480px) {
+        padding: 1rem 0;
+    }
     @media screen and (min-width: 768px) {
         padding: 2rem 0;
     }
@@ -600,7 +603,10 @@ span {
     }
 
     .slick-dots {
-        bottom: -3.5rem;
+        bottom: -0.9rem;
+        @media screen and (min-width: 768px) {
+            bottom: -1.5rem;
+        }
     }
 
     .hover-text {
@@ -637,7 +643,10 @@ span {
         }
     }
     .slick-slide {
-        padding-bottom: 1.875rem;
+        padding-bottom: 0.7rem;
+        @media screen and (min-width: 480px) {
+           padding-bottom: 1.875rem; 
+        }
     }
 }
 
@@ -646,30 +655,33 @@ span {
 .populer-plase {
     position: relative;
     h2 {
-        font-size: 3.6vh;
+        font-size: 5.2vh;
         font-weight: 700;
+        text-transform: uppercase;
+        color: #f7f7f7;
         @media screen and (min-width: 480px) {
-            font-size: 5.4vh;
+            font-size: 6vh;
         }
 
         @media screen and (min-width: 768px) {
-            font-size: 8.6vh;
+            font-size: 8.4vh;
         }
 
         @media screen and (min-width: 1024px) {
-            font-size: 11.6vh;
+            font-size: 8.5vh;
         }
 
-        text-transform: uppercase;
-        color: #f7f7f7;
+        @media screen and (min-width: 1200px) {
+            font-size: 10vh;
+        }
     }
     .holder-heading {
         position: absolute;
-        top: 27%;
+        top: -2%;
         left: 0;
 
         @media screen and (min-width: 480px) {
-            top: 32%;
+            top: 22%;
         }
     }
 }
@@ -707,7 +719,7 @@ span {
 }
 
 .holder-slider-populer {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
 
     @media screen and (min-width: 480px) {
         padding: 3.5rem 0;
@@ -780,7 +792,10 @@ span {
 }
 
 .carousel-indicators {
-    bottom: -4.75rem;
+    bottom: -2.45rem;
+    @media screen and (min-width: 768px) {
+        bottom: -2.95rem;
+    }
     li {
         width: 0.5rem;
         height: 0.5rem;
@@ -796,7 +811,7 @@ span {
         padding: 2.5rem 0;
     }
     @media screen and (min-width: 1024px) {
-        padding: 3rem 0;
+        padding: 3rem 0 7rem;
     }
 }
 
@@ -805,7 +820,6 @@ span {
 }
 
 .holder-slider-destination {
-    // padding: 2rem 0;
     h4 {
         font-size: 1rem;
         margin-bottom: 1rem;
@@ -846,8 +860,11 @@ span {
         }
     }
     .visual {
-        padding-top: 1rem;
+        padding: 1rem 0;
         margin: 0 auto;
+        @media screen and (min-width: 768px) {
+            padding: 1rem 0 0;
+        }
         @media screen and (min-width: 1600px) {
             padding-top: 3rem;
         }
@@ -877,6 +894,20 @@ span {
     }
 }
 
+.slick-dots {
+    bottom: -0.4rem;
+    @media screen and (min-width: 768px) {
+        bottom: -2.5rem;
+    }
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 1rem;
+    }
+}
+
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
     color: $yellow;
     font-size: 0.5rem;
@@ -895,7 +926,7 @@ span {
             padding: 5rem 0;
         }
         @media screen and (min-width: 1024px) {
-            padding: 9.3rem 0; 
+            padding: 7rem 0; 
         }
     }
     strong {
@@ -960,7 +991,7 @@ span {
         padding: 5rem 0; 
     }
     @media screen and (min-width: 1024px) {
-        padding: 9.3rem 0; 
+        padding: 7rem 0; 
     }
     h2 {
         font-size: 1rem;
@@ -1048,9 +1079,9 @@ span {
                 font-size: 1.2rem;
             }
         }
-        .slick-prev:before {
-            // content: '\e906';
-        }
+    }
+    .btn-outline-info {
+        border: 1px solid $yellow;
     }
 }
 

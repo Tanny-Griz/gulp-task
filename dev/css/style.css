@@ -7409,7 +7409,8 @@ header {
   background-size: cover;
   background-position: 50% 0;
   position: relative;
-  color: #fff; }
+  color: #fff;
+  min-height: 100vh; }
   @media screen and (min-width: 768px) {
     .banner {
       min-height: 100vh; } }
@@ -7576,8 +7577,10 @@ span {
   background-color: #fafafa; }
 
 .holder-popular {
-  padding-top: 2.55rem;
-  margin-bottom: 2.55rem; }
+  padding-top: 4rem; }
+  @media screen and (min-width: 768px) {
+    .holder-popular {
+      margin-bottom: 2.55rem; } }
 
 .holder-header {
   text-transform: uppercase; }
@@ -7600,7 +7603,10 @@ span {
         font-size: 1.875em; } }
 
 .holder-slider {
-  padding: 1rem 0; }
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 480px) {
+    .holder-slider {
+      padding: 1rem 0; } }
   @media screen and (min-width: 768px) {
     .holder-slider {
       padding: 2rem 0; } }
@@ -7643,7 +7649,10 @@ span {
       .holder-slider .text {
         padding: 0.8rem 0 0.8rem; } }
   .holder-slider .slick-dots {
-    bottom: -3.5rem; }
+    bottom: -0.9rem; }
+    @media screen and (min-width: 768px) {
+      .holder-slider .slick-dots {
+        bottom: -1.5rem; } }
   .holder-slider .hover-text {
     display: block;
     text-align: center;
@@ -7674,31 +7683,37 @@ span {
           font-size: 1.6rem;
           bottom: -1.5rem; } }
   .holder-slider .slick-slide {
-    padding-bottom: 1.875rem; }
+    padding-bottom: 0.7rem; }
+    @media screen and (min-width: 480px) {
+      .holder-slider .slick-slide {
+        padding-bottom: 1.875rem; } }
 
 .populer-plase {
   position: relative; }
   .populer-plase h2 {
-    font-size: 3.6vh;
+    font-size: 5.2vh;
     font-weight: 700;
     text-transform: uppercase;
     color: #f7f7f7; }
     @media screen and (min-width: 480px) {
       .populer-plase h2 {
-        font-size: 5.4vh; } }
+        font-size: 6vh; } }
     @media screen and (min-width: 768px) {
       .populer-plase h2 {
-        font-size: 8.6vh; } }
+        font-size: 8.4vh; } }
     @media screen and (min-width: 1024px) {
       .populer-plase h2 {
-        font-size: 11.6vh; } }
+        font-size: 8.5vh; } }
+    @media screen and (min-width: 1200px) {
+      .populer-plase h2 {
+        font-size: 10vh; } }
   .populer-plase .holder-heading {
     position: absolute;
-    top: 27%;
+    top: -2%;
     left: 0; }
     @media screen and (min-width: 480px) {
       .populer-plase .holder-heading {
-        top: 32%; } }
+        top: 22%; } }
 
 .holder-heading h3 {
   font-size: 1rem;
@@ -7727,7 +7742,7 @@ span {
       font-size: 1rem; } }
 
 .holder-slider-populer {
-  padding: 3rem 0; }
+  padding: 3rem 0 0; }
   @media screen and (min-width: 480px) {
     .holder-slider-populer {
       padding: 3.5rem 0; } }
@@ -7785,7 +7800,10 @@ span {
     padding: 0.5rem; }
 
 .carousel-indicators {
-  bottom: -4.75rem; }
+  bottom: -2.45rem; }
+  @media screen and (min-width: 768px) {
+    .carousel-indicators {
+      bottom: -2.95rem; } }
   .carousel-indicators li {
     width: 0.5rem;
     height: 0.5rem;
@@ -7798,7 +7816,7 @@ span {
 
 @media screen and (min-width: 1024px) {
   .destination {
-    padding: 3rem 0; } }
+    padding: 3rem 0 7rem; } }
 
 .box-header {
   padding: 2rem 0; }
@@ -7841,8 +7859,11 @@ span {
       flex-direction: row; } }
 
 .holder-slider-destination .visual {
-  padding-top: 1rem;
+  padding: 1rem 0;
   margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .holder-slider-destination .visual {
+      padding: 1rem 0 0; } }
   @media screen and (min-width: 1600px) {
     .holder-slider-destination .visual {
       padding-top: 3rem; } }
@@ -7867,6 +7888,18 @@ span {
 .holder-slider-destination .slick-slide {
   padding: 0.6rem 0; }
 
+.slick-dots {
+  bottom: -0.4rem; }
+  @media screen and (min-width: 768px) {
+    .slick-dots {
+      bottom: -2.5rem; } }
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0; }
+  @media screen and (min-width: 768px) {
+    .slick-dotted.slick-slider {
+      margin-bottom: 1rem; } }
+
 .slick-dots li.slick-active button:before, .slick-dots li button:before {
   color: #ffc001;
   font-size: 0.5rem; }
@@ -7882,7 +7915,7 @@ span {
         padding: 5rem 0; } }
     @media screen and (min-width: 1024px) {
       .best-packages .holder-best-packages {
-        padding: 9.3rem 0; } }
+        padding: 7rem 0; } }
   .best-packages strong {
     font-size: 1rem;
     color: #333; }
@@ -7938,7 +7971,7 @@ span {
       padding: 5rem 0; } }
   @media screen and (min-width: 1024px) {
     .holder-stock-limited {
-      padding: 9.3rem 0; } }
+      padding: 7rem 0; } }
   .holder-stock-limited h2 {
     font-size: 1rem;
     font-weight: 700;
@@ -8010,6 +8043,8 @@ span {
       @media screen and (min-width: 480px) {
         .holder-stock-limited .text strong {
           font-size: 1.2rem; } }
+  .holder-stock-limited .btn-outline-info {
+    border: 1px solid #ffc001; }
 
 .slick-prev:before, .slick-next:before {
   color: #ffc001; }
