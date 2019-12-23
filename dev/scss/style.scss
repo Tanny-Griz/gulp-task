@@ -120,10 +120,10 @@ img {
 }
 
 a {
-    color: $grey;
+    color: $gray;
     text-decoration: none;
     &:hover {
-        color: $grey;
+        color: $gray;
         text-decoration: none;
     }
 }
@@ -403,7 +403,7 @@ header {
         margin-top: -2.1rem;
     }
     .nav-item {
-        color: $grey;
+        color: $gray;
         text-transform: uppercase;
         font-size: 0.6rem;
         padding: 1px;
@@ -412,7 +412,7 @@ header {
             font-size: 0.8rem;
         }
         a {
-            color: $grey;
+            color: $gray;
             background-color: $white;
             &:hover {
                 background-color: $yellow;
@@ -527,7 +527,7 @@ span {
         }
     }
     h2 {
-        color: $grey;
+        color: $gray;
         font-size: 1.3em;
         font-weight: 700;
 
@@ -560,7 +560,7 @@ span {
 
     .img-link {
         text-decoration: none;
-        color: $grey;
+        color: $gray;
         &:hover .hover-text {
             opacity: 0.9;
             background-color: $yellow;
@@ -679,9 +679,9 @@ span {
         position: absolute;
         top: -2%;
         left: 0;
-
+        top: -14%;
         @media screen and (min-width: 480px) {
-            top: 22%;
+            top: 14%;
         }
     }
 }
@@ -728,7 +728,7 @@ span {
         padding: 4rem 0;
     }
     a {
-        color: $grey;
+        color: $gray;
         padding: 0.2rem;
     }
     .carousel-inner {
@@ -751,7 +751,7 @@ span {
         background-color: $white;
         opacity: 0.75;
         margin: 0 auto;
-        color: $grey;
+        color: $gray;
         border-radius: 0.3rem;
         box-shadow: 0 0 10px #e2e2e2;
         max-width: 11.4rem;
@@ -931,7 +931,7 @@ span {
     }
     strong {
         font-size: 1rem;
-        color: $grey;
+        color: $gray;
         @media screen and (min-width: 768px) {
             font-size: 1.5rem;
         }
@@ -985,18 +985,27 @@ span {
     }
 }
 
+.stock-limited {
+    background-color: #f9f9f9;
+}
+
 .holder-stock-limited {
-    padding: 2rem 0;
+    padding: 2rem 0 6rem;
+    position: relative;
     @media screen and (min-width: 768px)  {
-        padding: 5rem 0; 
+        padding: 5rem 0 9rem; 
     }
     @media screen and (min-width: 1024px) {
-        padding: 7rem 0; 
+        padding: 7rem 0 10rem; 
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 7rem 0 12rem; 
     }
     h2 {
         font-size: 1rem;
         font-weight: 700;
         text-transform: uppercase;
+        margin-bottom: 1rem;
         @media screen and (min-width: 768px)  {
             font-size: 1.875rem; 
         }
@@ -1005,7 +1014,11 @@ span {
         font-size: 0.5rem;
         display: inline-block;
         line-height: 1.4;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+        color: $light-gray;
+        @media screen and (min-width: 480px) {
+            font-size: 0.8rem;
+        }
         @media screen and (min-width: 768px)  {
             font-size: 1rem; 
         }
@@ -1027,15 +1040,23 @@ span {
         padding: 1rem 0;
     }
     .slide-content {
-        flex-direction: column;
-        justify-content: center;
+        max-width: 18rem;
+        margin: 0 auto;
         @media screen and (min-width: 480px)  {
             flex-direction: row;
+            max-width: 22rem;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 100%;
+            justify-content: center;
         }
     }
     .visual {
+        display: flex;
+        max-width: 60%;
         @media screen and (min-width: 480px)  {
             max-width: 14rem;
+            max-width: 50%;
         }
         @media screen and (min-width: 768px)  {
             max-width: 16rem;
@@ -1048,11 +1069,13 @@ span {
         }
     }
     .text {
-        text-align: center;
-        padding: 1rem 0;
+        background-color: $white;
+        padding: 0.2rem 1rem 0;
+        max-width: 40%;
         @media screen and (min-width: 480px)  {
             text-align: left;
-            padding: 1rem 2rem;
+            padding: 1rem;
+            max-width: 50%;
         }
         @media screen and (min-width: 768px)  {
             
@@ -1061,7 +1084,7 @@ span {
             font-size: 1rem;
             font-weight: 700;
             @media screen and (min-width: 480px) {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 margin-bottom: 1rem;
             }
         }
@@ -1082,6 +1105,21 @@ span {
     }
     .btn-outline-info {
         border: 1px solid $yellow;
+    }
+    .abs {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -7rem;
+        @media screen and (min-width: 480px) {
+            bottom: -8rem;
+        }
+        @media screen and (min-width: 768px) {
+            bottom: -8rem;
+        }
+        @media screen and (min-width: 1200px) {
+            bottom: -9rem;
+        }
     }
 }
 
@@ -1106,6 +1144,78 @@ span {
     color: #28c190;
 }
 
-.color-grey {
-    color: $grey;
+.color-gray {
+    color: $gray;
+}
+
+// ---------------------
+.subscribe-form {
+    padding-top: 9rem;
+    @media screen and (min-width: 768px) {
+        padding-top: 10rem;
+    }
+    
+    margin-bottom: 5rem;
+    @media screen and (min-width: 1024px) {
+        padding-top: 12rem;
+    }
+    .holder-form {
+        background-image: url('../images/submit.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 0;
+    }
+    form {
+        color: $white;
+        text-transform: uppercase;
+        padding: 3.5rem 0;
+        @media screen and (min-width: 768px) {
+            padding: 5rem 0;
+        }
+        @media screen and (min-width: 1024px) {
+            padding: 10rem 0;
+        }
+        h2 {
+            font-size: 1.5rem;
+            @media screen and (min-width: 768px) {
+                font-size: 1.875rem;
+            }
+            
+        }
+        p {
+            font-size: 0.8rem;
+            @media screen and (min-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+        input[type="email"] {
+            font-size: 1rem;
+            color: #1b2739;
+            padding: 0.5rem 1rem;
+            border: none;
+            margin-bottom: 1rem;
+            @media screen and (min-width: 768px) {
+                padding: 0.6rem 1.4rem;
+                width: 20rem; 
+            }
+            @media screen and (min-width: 1024px) {
+                padding: 1rem 1.75rem;
+                width: 23.7rem; 
+            }
+        }
+        input[type="submit"] {
+            text-transform: uppercase;
+            color: $white;
+            background: #1b2739;
+            padding: 0.5rem 1rem;
+            border: none;
+            margin-left: -4px;
+            @media screen and (min-width: 768px) {
+                padding: 0.6rem 1.4rem;
+            }
+            @media screen and (min-width: 1024px) {
+                padding: 1rem 1.75rem;
+            }
+        }
+    }
 }
