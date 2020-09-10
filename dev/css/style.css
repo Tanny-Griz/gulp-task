@@ -7298,6 +7298,10 @@ ul {
 .wrapper {
   min-width: 20rem; }
 
+@media screen and (min-width: 1200) {
+  .container {
+    max-width: 73.125rem; } }
+
 header {
   position: absolute;
   top: 0;
@@ -7306,7 +7310,8 @@ header {
   z-index: 2; }
 
 .holder-social {
-  border-bottom: 1px solid #ffc001; }
+  border-bottom: 1px solid #ffc001;
+  z-index: 2; }
   @media screen and (min-width: 768px) {
     .holder-social {
       padding: 1rem 0; } }
@@ -7488,7 +7493,7 @@ header {
 
 .choose-tour {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: -1.15rem; }
   @media screen and (min-width: 480px) {
     .choose-tour {
@@ -7602,6 +7607,10 @@ span {
       .holder-header h2 {
         font-size: 1.875em; } }
 
+.bg-color {
+  background-color: #333;
+  opacity: 0.6; }
+
 .holder-slider {
   margin-bottom: 1rem; }
   @media screen and (min-width: 480px) {
@@ -7691,27 +7700,26 @@ span {
 .populer-plase {
   position: relative; }
   .populer-plase h2 {
-    font-size: 5.2vh;
+    font-size: 11vw;
     font-weight: 700;
     text-transform: uppercase;
     color: #f7f7f7; }
     @media screen and (min-width: 480px) {
       .populer-plase h2 {
-        font-size: 6vh; } }
+        font-size: 6vw; } }
     @media screen and (min-width: 768px) {
       .populer-plase h2 {
-        font-size: 8.4vh; } }
+        font-size: 8.4vw; } }
     @media screen and (min-width: 1024px) {
       .populer-plase h2 {
-        font-size: 8.5vh; } }
+        font-size: 8.5vhw; } }
     @media screen and (min-width: 1200px) {
       .populer-plase h2 {
-        font-size: 10vh; } }
+        font-size: 10vw; } }
   .populer-plase .holder-heading {
     position: absolute;
-    top: -2%;
     left: 0;
-    top: -14%; }
+    top: -7%; }
     @media screen and (min-width: 480px) {
       .populer-plase .holder-heading {
         top: 14%; } }
@@ -7754,40 +7762,43 @@ span {
     color: #333;
     padding: 0.2rem; }
   .holder-slider-populer .carousel-inner {
-    overflow: visible;
     padding: 1rem 0; }
     @media screen and (min-width: 480px) {
       .holder-slider-populer .carousel-inner {
-        padding: 2rem 0; } }
+        padding: 2rem 0 4rem; } }
 
 .carousel-caption {
   display: none; }
   @media screen and (min-width: 480px) {
     .carousel-caption {
-      display: block;
-      bottom: 0;
-      transform: translateY(50%);
+      transform: translateY(-50%);
       background-color: #fff;
       opacity: 0.75;
       margin: 0 auto;
       color: #333;
       border-radius: 0.3rem;
       box-shadow: 0 0 10px #e2e2e2;
-      max-width: 11.4rem; } }
+      max-width: 11rem; } }
   @media screen and (min-width: 768px) {
     .carousel-caption {
-      max-width: 15rem; } }
+      display: block;
+      max-width: 12rem;
+      bottom: -1.875rem;
+      padding: 0; } }
+  @media screen and (min-width: 1024px) {
+    .carousel-caption {
+      bottom: -3rem; } }
   .carousel-caption h5 {
     font-weight: 700;
     font-size: 0.9rem; }
     @media screen and (min-width: 768px) {
       .carousel-caption h5 {
-        font-size: 1.2rem; } }
+        display: none; } }
     @media screen and (min-width: 1024px) {
       .carousel-caption h5 {
-        font-size: 1.5rem; } }
-  .carousel-caption .social-links {
-    padding: 1rem 0; }
+        font-size: 1.5rem;
+        display: block;
+        padding: 0.3rem 1rem; } }
   .carousel-caption ul {
     display: inline-block;
     font-size: 0; }
@@ -7801,10 +7812,13 @@ span {
     padding: 0.5rem; }
 
 .carousel-indicators {
-  bottom: -2.45rem; }
+  bottom: -2.5rem; }
+  @media screen and (min-width: 480px) {
+    .carousel-indicators {
+      bottom: -0.5rem; } }
   @media screen and (min-width: 768px) {
     .carousel-indicators {
-      bottom: -2.95rem; } }
+      bottom: -2rem; } }
   .carousel-indicators li {
     width: 0.5rem;
     height: 0.5rem;

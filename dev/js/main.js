@@ -63,3 +63,5 @@ $('.slider-populer').slick({
 $('.single-item').slick({
     arrows: false,
 });
+
+
