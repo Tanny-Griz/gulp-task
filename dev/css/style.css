@@ -7919,65 +7919,100 @@ span {
   color: #ffc001;
   font-size: 0.5rem; }
 
-.best-packages {
-  background-image: url("../images/bg-transper.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .best-packages .holder-best-packages {
-    padding: 2rem 0; }
+/* parallax */
+.parallax-holder {
+  position: relative; }
+  .parallax-holder .container {
+    position: absolute; }
+
+.parallax-block {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    .parallax-block {
+      min-height: 400px; } }
+  @media screen and (min-width: 1024px) {
+    .parallax-block {
+      min-height: 500px; } }
+  @media screen and (min-width: 1200px) {
+    .parallax-block {
+      min-height: 600px; } }
+  .parallax-block .parallax-image {
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover; }
     @media screen and (min-width: 768px) {
-      .best-packages .holder-best-packages {
-        padding: 5rem 0; } }
+      .parallax-block .parallax-image {
+        min-height: 400px; } }
     @media screen and (min-width: 1024px) {
-      .best-packages .holder-best-packages {
-        padding: 7rem 0; } }
-  .best-packages strong {
-    font-size: 1rem;
-    color: #333; }
-    @media screen and (min-width: 768px) {
-      .best-packages strong {
-        font-size: 1.5rem; } }
-  .best-packages .discount {
-    display: block;
-    color: #ffc001;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 0.5rem; }
-    @media screen and (min-width: 768px) {
-      .best-packages .discount {
-        font-size: 1rem; } }
-  .best-packages sup {
-    font-size: 0.6rem; }
-    @media screen and (min-width: 768px) {
-      .best-packages sup {
-        font-size: 0.8rem; } }
-  .best-packages h3 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 1rem; }
-    @media screen and (min-width: 1024px) {
-      .best-packages h3 {
-        font-size: 2rem; } }
-  .best-packages p {
-    font-size: 0.8rem;
-    color: #616161;
-    margin-bottom: 1rem; }
-    @media screen and (min-width: 768px) {
-      .best-packages p {
-        font-size: 0.9rem; } }
-    @media screen and (min-width: 1024px) {
-      .best-packages p {
-        font-size: 1rem; } }
-  .best-packages .btn-more {
-    text-align: center;
-    width: 32%;
-    font-size: 0.8rem;
-    margin-bottom: 1rem; }
-    @media screen and (min-width: 768px) {
-      .best-packages .btn-more {
-        font-size: 1rem;
-        width: 40%; } }
+      .parallax-block .parallax-image {
+        min-height: 500px; } }
+    @media screen and (min-width: 1200px) {
+      .parallax-block .parallax-image {
+        min-height: 600px; } }
+
+.best-packages .holder-best-packages {
+  padding: 2rem 0; }
+  @media screen and (min-width: 768px) {
+    .best-packages .holder-best-packages {
+      padding: 5rem 0; } }
+  @media screen and (min-width: 1024px) {
+    .best-packages .holder-best-packages {
+      padding: 7rem 0; } }
+
+.best-packages strong {
+  font-size: 1rem;
+  color: #333; }
+  @media screen and (min-width: 768px) {
+    .best-packages strong {
+      font-size: 1.5rem; } }
+
+.best-packages .discount {
+  display: block;
+  color: #ffc001;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem; }
+  @media screen and (min-width: 768px) {
+    .best-packages .discount {
+      font-size: 1rem; } }
+
+.best-packages sup {
+  font-size: 0.6rem; }
+  @media screen and (min-width: 768px) {
+    .best-packages sup {
+      font-size: 0.8rem; } }
+
+.best-packages h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 1024px) {
+    .best-packages h3 {
+      font-size: 2rem; } }
+
+.best-packages p {
+  font-size: 0.8rem;
+  color: #616161;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 768px) {
+    .best-packages p {
+      font-size: 0.9rem; } }
+  @media screen and (min-width: 1024px) {
+    .best-packages p {
+      font-size: 1rem; } }
+
+.best-packages .btn-more {
+  text-align: center;
+  width: 32%;
+  font-size: 0.8rem;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 768px) {
+    .best-packages .btn-more {
+      font-size: 1rem;
+      width: 40%; } }
 
 .stock-limited {
   background-color: #f9f9f9; }

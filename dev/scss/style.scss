@@ -933,11 +933,43 @@ span {
 
 //  --------------------------------------
 
-.best-packages {
-    background-image: url('../images/bg-transper.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+/* parallax */
+.parallax-holder {
+    position: relative;
+    .container {
+        position: absolute;
+    }
+}
+.parallax-block {
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        min-height: 400px;
+    }
+    @media screen and (min-width: 1024px) {
+        min-height: 500px;
+    }
+    @media screen and (min-width: 1200px) {
+        min-height: 600px;
+    }
+    .parallax-image {
+        min-height: 500px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        @media screen and (min-width: 768px) {
+            min-height: 400px;
+        }
+        @media screen and (min-width: 1024px) {
+            min-height: 500px;
+        }
+        @media screen and (min-width: 1200px) {
+            min-height: 600px;
+        }
+    }
+}
 
+.best-packages {
     .holder-best-packages {
         padding: 2rem 0;
         @media screen and (min-width: 768px) {
