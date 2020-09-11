@@ -7937,6 +7937,7 @@ span {
     .parallax-block {
       min-height: 600px; } }
   .parallax-block .parallax-image {
+    background-image: url("../images/bg-transper.jpg");
     min-height: 500px;
     background-repeat: no-repeat;
     background-position: center center;
